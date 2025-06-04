@@ -2,6 +2,10 @@
 
 This project demonstrates the 3D reconstruction of the NUST Pakistan HQ Library and Auditorium using COLMAP.
 
+## 🎥 Dense Point Cloud Demonstration
+
+![NUST 3D Reconstruction](Demo.gif)
+
 ## 📸 Input Data
 
 - A collection of images capturing various angles of the NUST HQ, Library and Auditorium.
