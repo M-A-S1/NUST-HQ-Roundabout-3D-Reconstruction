@@ -36,6 +36,3 @@ This project demonstrates the 3D reconstruction of the NUST Pakistan HQ Library 
 
 3. Run COLMAP and then follow automatic 3D reconstruction steps
 
-## Results 
-
-![NUST 3D Reconstruction](path_to_your_gif.gif)
