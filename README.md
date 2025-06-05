@@ -20,7 +20,7 @@ To convert the 3D reconstruction into **real-world metric scale**, I followed th
 
 Used Google Maps to measure the **length of Jinnah Auditorium**’s exterior wall.
 
-![Google Maps Measurement](assets/google_maps_measurement.jpg)
+![Google Maps Measurement](1.png)
 
 *Measured length: ~50 meters*
 
@@ -30,9 +30,9 @@ Used Google Maps to measure the **length of Jinnah Auditorium**’s exterior wal
 
 Measured the **same wall** in the unscaled mesh using a 3D viewer.
 
-![Model Measurement](assets/model_measurement.jpg)
+![Model Measurement](2.png)
 
-*Measured length in model units: ~5 units*
+*Measured length in mesh units: ~5 units*
 
 ---
 
@@ -40,7 +40,7 @@ Measured the **same wall** in the unscaled mesh using a 3D viewer.
 
 Calculated the scale factor:
 
-Scale Factor = Real Length / Model Length = 41.22 / 3.41 = 12.1
+Scale Factor = Real Length / mesh Length = 41.22 / 3.41 = 12.1
 
 Applied this factor to rescale the model, resulting in a **metric-accurate 3D reconstruction**.
 
