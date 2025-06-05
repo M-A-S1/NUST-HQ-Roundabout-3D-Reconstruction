@@ -46,15 +46,3 @@ Applied this factor to rescale the model, resulting in a **metric-accurate 3D re
 
 ---
 
-## 🗂️ Project Structure
-
-NUST-3D-Reconstruction/
-├── images/ # Input video frames
-├── sparse/ # Sparse reconstruction (COLMAP)
-├── dense/ # Dense reconstruction and mesh outputs
-├── assets/
-│ ├── dense_demo.gif # GIF demo of 3D reconstruction
-│ ├── google_maps_measurement.jpg
-│ └── model_measurement.jpg
-├── README.md
-└── LICENSE
