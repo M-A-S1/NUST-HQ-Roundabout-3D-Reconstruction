@@ -4,7 +4,7 @@ This project demonstrates the 3D reconstruction of the NUST Pakistan HQ Library 
 
 ## 🎥 Dense Point Cloud Demonstration
 
-![NUST 3D Reconstruction](Demo.gif)
+![NUST 3D Reconstruction](demo.gif)
 
 ## 📸 Input Data
 
