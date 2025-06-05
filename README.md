@@ -4,6 +4,18 @@ This project showcases a full 3D reconstruction of the NUST Pakistan HQ, Library
 
 ---
 
+## 📸 Input Data
+
+- A collection of images capturing various angles of the NUST Library and Auditorium.
+
+## 🛠️ Reconstruction Pipeline
+
+1. **Feature Extraction**: Detect and extract features from input images.
+2. **Feature Matching**: Match features across images to establish correspondences.
+3. **Sparse Reconstruction**: Perform Structure-from-Motion (SfM) to estimate camera poses and generate a sparse point cloud.
+4. **Dense Reconstruction**: Use Multi-View Stereo (MVS) to generate a dense point cloud.
+5. **Meshing**: Create 3D meshes from the dense point cloud using Poisson or Delaunay meshing.
+
 ## 🎬 Dense 3D Reconstruction Demo
 
 ![Dense Reconstruction Demo](demo.gif)
