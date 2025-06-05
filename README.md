@@ -1,38 +1,60 @@
-# NUST HQ Roundabout 3D Reconstruction
+# 🏛️ NUST 3D Reconstruction – Library & Jinnah Auditorium
 
-This project demonstrates the 3D reconstruction of the NUST Pakistan HQ Library and Auditorium using COLMAP.
+This project showcases a full 3D reconstruction of the NUST Pakistan HQ, Library and Jinnah Auditorium using **COLMAP**. It includes both **sparse** and **dense** reconstructions, mesh generation, and **metric scaling** using real-world measurements.
 
-## 🎥 Dense Point Cloud Demonstration
+---
 
-![NUST 3D Reconstruction](demo.gif)
+## 🎬 Dense 3D Reconstruction Demo
 
-## 📸 Input Data
+![Dense Reconstruction Demo](demo.gif)
 
-- A collection of images capturing various angles of the NUST HQ, Library and Auditorium.
+*Above: Rotating view of the dense 3D point cloud generated with COLMAP.*
 
-## 🛠️ Reconstruction Pipeline
+---
 
-1. **Feature Extraction**: Detect and extract features from input images.
-2. **Feature Matching**: Match features across images to establish correspondences.
-3. **Sparse Reconstruction**: Perform Structure-from-Motion (SfM) to estimate camera poses and generate a sparse point cloud.
-4. **Dense Reconstruction**: Use Multi-View Stereo (MVS) to generate a dense point cloud.
-5. **Meshing**: Create 3D meshes from the dense point cloud using Poisson or Delaunay meshing.
+## 📏 Metric Reconstruction Using Real-World Scaling
 
-## 📁 Folder Structure
+To convert the 3D reconstruction into **real-world metric scale**, I followed this process:
 
-- `images/`: Contains the input images.
-- `sparse/`: Contains the sparse reconstruction files.
-- `dense/`: Contains the dense reconstruction files and meshes.
+### 1. 📐 Real-World Measurement (Google Maps)
 
-## 🚀 Getting Started
+Used Google Maps to measure the **length of Jinnah Auditorium**’s exterior wall.
 
-1. Clone the repository:
+![Google Maps Measurement](assets/google_maps_measurement.jpg)
 
-```bash
-   git clone https://github.com/yourusername/NUST-3D-Reconstruction.git
-   cd NUST-3D-Reconstruction
-```
-2. Place your input images in the images/ folder.
+*Measured length: ~50 meters*
 
-3. Run COLMAP and then follow automatic 3D reconstruction steps
+---
 
+### 2. 🧱 Model Measurement (COLMAP/Viewer)
+
+Measured the **same wall** in the unscaled mesh using a 3D viewer.
+
+![Model Measurement](assets/model_measurement.jpg)
+
+*Measured length in model units: ~5 units*
+
+---
+
+### 3. ⚖️ Scaling the Model
+
+Calculated the scale factor:
+
+Scale Factor = Real Length / Model Length = 41.22 / 3.41 = 12.1
+
+Applied this factor to rescale the model, resulting in a **metric-accurate 3D reconstruction**.
+
+---
+
+## 🗂️ Project Structure
+
+NUST-3D-Reconstruction/
+├── images/ # Input video frames
+├── sparse/ # Sparse reconstruction (COLMAP)
+├── dense/ # Dense reconstruction and mesh outputs
+├── assets/
+│ ├── dense_demo.gif # GIF demo of 3D reconstruction
+│ ├── google_maps_measurement.jpg
+│ └── model_measurement.jpg
+├── README.md
+└── LICENSE
