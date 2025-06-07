@@ -1,4 +1,4 @@
-# 🏛️ NUST 3D Reconstruction – Library & Jinnah Auditorium
+# 🏛️ NUST 3D Reconstruction – HQ, Library & Jinnah Auditorium
 
 This project showcases a full 3D reconstruction of the NUST Pakistan HQ, Library and Jinnah Auditorium using **COLMAP**. It includes both **sparse** and **dense** reconstructions, mesh generation, and **metric scaling** using real-world measurements.
 
