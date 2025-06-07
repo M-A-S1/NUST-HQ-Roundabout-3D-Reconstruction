@@ -16,11 +16,18 @@ This project showcases a full 3D reconstruction of the NUST Pakistan HQ, Library
 4. **Dense Reconstruction**: Use Multi-View Stereo (MVS) to generate a dense point cloud.
 5. **Meshing**: Create 3D meshes from the dense point cloud using Poisson or Delaunay meshing.
 
-## 🎬 Dense 3D Reconstruction Demo
+---
+## 🎬 Dense 3D Reconstruction Demo Gif
 
 ![Dense Reconstruction Demo](demo.gif)
 
 *Above: Rotating view of the dense 3D point cloud generated with COLMAP.*
+
+---
+
+### Demo Video
+
+[![Watch the video](https://img.youtube.com/vi/j8dYp3vbf28/maxresdefault.jpg)](https://youtu.be/j8dYp3vbf28)
 
 ---
 
